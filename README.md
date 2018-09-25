@@ -1,6 +1,11 @@
-# [rocker](https://insanj.github.io/rocker/)
+<h2 align="center">rocker</h2>
 
-🔘 philips hue rocker. intricate controls for philips hue lights using a free webapp built in vanilla jquery.
+<p align="center">🤘 philips hue rocker. intricate controls for philips hue lights using a free webapp built in vanilla jquery.</p>
+
+![](https://img.shields.io/badge/language-javascript-blue.svg)
+![](https://img.shields.io/badge/conda-3.14.1-blue.svg)
+[![](https://img.shields.io/aur/license/yaourt.svg?style=popout)](LICENSE)
+
 
 ## Usage
 
