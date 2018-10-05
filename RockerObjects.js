@@ -79,5 +79,20 @@ class RockerNetworker {
       }
     });
   }
+  
+  pressLinkButton(bridgeUsername) {
+    var linkButtonLocation = this.config.authLocation + "/api/" + bridgeUsername + "/config";
+    var linkButtonBody = {"linkbutton": true};
+    var linkButtonString = JSON.stringify(linkButtonBody);
+    
+    $.ajax({
+      url: linkButtonLocation,
+      data: linkButtonString,
+      method: "PUT",
+      complete: function (data) {
+        rocker_log("Attempted to press link button! " + data);
+      }
+    });
+  }
 }
 
