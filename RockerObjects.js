@@ -80,6 +80,21 @@ class RockerNetworker {
     });
   }
   
+  turnOnColorLoop(bridgeUsername) {
+    var colorLoopLocation = this.config.authLocation + "/api/" + bridgeUsername + "/groups/3/action";
+    var colorLoopBody = {"on":true,"hue": 25500,"effect":"colorloop"};
+    var colorLoopString = JSON.stringify(colorLoopBody);
+    
+    $.ajax({
+      url: colorLoopLocation,
+      data: colorLoopString,
+      method: "PUT",
+      complete: function (data) {
+        rocker_log("Attempted to enable colorloop! " + data);
+      }
+    });
+  }
+  
   pressLinkButton(bridgeUsername) {
     var linkButtonLocation = this.config.authLocation + "/api/" + bridgeUsername + "/config";
     var linkButtonBody = {"linkbutton": true};
