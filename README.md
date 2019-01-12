@@ -1,6 +1,6 @@
 <h2 align="center">rocker</h2>
 
-<p align="center">🤘 philips hue rocker. intricate controls for philips hue lights using a free webapp built in vanilla jquery.</p>
+<p align="center">🤘 philips hue rocker sample code in vanilla jquery.</p>
 
 ![](https://img.shields.io/badge/language-javascript-blue.svg)
 ![](https://img.shields.io/badge/conda-3.14.1-blue.svg)
